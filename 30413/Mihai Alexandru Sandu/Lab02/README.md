@@ -1,5 +1,5 @@
-# Lab X
+# Lab 02
 
-> Edit this file and describe in a few words what you've done in this lab.
+In this lab I managed to install git and found out how to use it a little bit.
 
 
