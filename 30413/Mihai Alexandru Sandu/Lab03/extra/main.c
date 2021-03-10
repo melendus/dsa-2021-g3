@@ -102,6 +102,45 @@ void SortSLList(SLListT *list)
     }
 }
 
+int IntersectionFct(int d, SLListT *list1, SLListT *list2)
+{
+    NodeT *p1 = list1->first;
+    NodeT *p2 = list2->first;
+    for(int i = 0; i < d; i++)
+        p1 = p1->next;
+    while ( p1 != NULL && p2 != NULL)
+    {
+        if (p1->value == p2->value)
+            return p1->value;
+        p1 = p1->next;
+        p2 = p2->next;
+    }
+    return -1;
+}
+
+// works only if the lists are sorted
+// it return the value of the node of the intersection, otherwise it return -1
+
+int Intersection(SLListT *list1, SLListT *list2)
+{
+    int d;
+    int data;
+    NodeT *p1 = list1->first;
+    NodeT *p2 = list2->first;
+    if (list1->count > list2->count)
+    {
+        d = list1->count - list2->count;
+        data = IntersectionFct(d,list1,list2);
+    }
+    else
+    {
+        d= list2->count - list1->count;
+        data = IntersectionFct(d,list2,list1);
+    }
+    return data;
+}
+
+
 void DeleteDuplicates(SLListT *list)
 {
     SortSLList(list);
@@ -154,9 +193,9 @@ int main()
     AddFirst(list1,p1);
     AddFirst(list1,p2);
     AddFirst(list1,p3);
-    AddFirst(list1,p4);
-    AddFirst(list1,p5);
-    AddFirst(list1,p6);
+    AddFirst(list2,p4);
+    AddFirst(list2,p5);
+    AddFirst(list2,p6);
     //nodeIntersection = FindIntersection(list1,list2);
     DeleteDuplicates(list1);
     show(list1);
