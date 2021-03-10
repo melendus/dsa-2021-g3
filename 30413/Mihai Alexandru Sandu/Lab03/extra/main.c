@@ -110,7 +110,7 @@ int IntersectionFct(int d, SLListT *list1, SLListT *list2)
         p1 = p1->next;
     while ( p1 != NULL && p2 != NULL)
     {
-        if (p1->value == p2->value)
+        if (p1 == p2)
             return p1->value;
         p1 = p1->next;
         p2 = p2->next;
@@ -118,7 +118,6 @@ int IntersectionFct(int d, SLListT *list1, SLListT *list2)
     return -1;
 }
 
-// works only if the lists are sorted
 // it return the value of the node of the intersection, otherwise it return -1
 
 int Intersection(SLListT *list1, SLListT *list2)
