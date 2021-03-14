@@ -1,5 +1,6 @@
-# Lab X
+# Lab 4
 
-> Edit this file and describe in a few words what you've done in this lab.
+> In this lab I learned about big O notation, and understood some past extra assignments.
+> I also understood trees better and how to implement them, that trees are all about recursion.
 
 
