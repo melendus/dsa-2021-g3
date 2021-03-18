@@ -87,14 +87,14 @@ void AddLast(SLListT *list, NodeT *p)
         else
         {
             p->npx = XOR(list->last,NULL);
-            list->last->npx = XOR(list->last,p);
+            list->last->npx = XOR(list->last->npx,p);  //aici era problema anterior, greseam cum schimbam pointerii
             list->last = p;
         }
         list->count++;
     }
 }
 
-void InsertBeforeKey(int key, SLListT *list, NodeT *node)
+void InsertBeforeKey(int key, SLListT *list, NodeT *node) //merge
 {
     NodeT *current;
     NodeT *previous;
@@ -122,7 +122,7 @@ void InsertBeforeKey(int key, SLListT *list, NodeT *node)
     }
 }
 
-void InsertAfterKey(int key,SLListT *list,NodeT *node)
+void InsertAfterKey(int key,SLListT *list,NodeT *node) //meargea
 {
     NodeT *current;
     NodeT *previous;
@@ -142,10 +142,13 @@ void InsertAfterKey(int key,SLListT *list,NodeT *node)
             AddLast(list,node);
         else
         {
-            next = XOR(previous,current->npx);
-            node->npx = XOR(current,next);
-            current->npx = XOR(previous,node);
-            next->npx = XOR(node,XOR(node,next->npx));
+            next = XOR(previous,current->npx); //to advance one position
+            previous = current;
+            current = next;
+
+            node->npx = XOR(previous,current);
+            previous->npx = XOR(node,XOR(current,previous->npx));
+            current->npx = XOR(node,XOR(previous,current->npx));
         }
         list->count++;
     }
@@ -293,10 +296,13 @@ int main()
 //    DeleteLast(listPtr);
 //    printForward(listPtr);
     //printf("%d %d\n",listPtr->first->data, listPtr->last->data);
-    InsertAfterKey(1,listPtr,createNode(100));
-    InsertBeforeKey(100,listPtr,createNode(200));
+    //InsertAfterKey(1,listPtr,createNode(100));
+    InsertBeforeKey(3,listPtr,createNode(200));
+    InsertAfterKey(200,listPtr,createNode(100));
+    InsertAfterKey(200,listPtr,createNode(1000));
     //deleteByKey(listPtr,5);
-    //deleteByKey(listPtr,50);
+    //DeleteFirst(listPtr);
+    //DeleteByKey(listPtr,200);
     //deleteByKey(listPtr,50);
     //printf("%d %d\n",listPtr->first->data, listPtr->last->data);
     //printf("%d ",listPtr->count);
