@@ -1,0 +1,10 @@
+The node was found
+The node was found
+D B A C G E H 
+A C B E H G D 
+B A C D G E H 
+The min node is :A
+The max node is: H
+E B A C H 
+A C B H E 
+B A C E H 
