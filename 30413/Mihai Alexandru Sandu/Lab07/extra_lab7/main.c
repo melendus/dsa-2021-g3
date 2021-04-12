@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// voi folosi o matrice de adiacenta, deoarece pozitiile imi sunt da-te
+// voi folosi o matrice de adiacenta, deoarece pozitiile imi sunt date
 // o lista inlantuita, pentru printare
 // va trebui sa declar o lista si functiile necesare
 // pentru a citi elementele:
@@ -59,26 +59,6 @@ void addLast(ListHeader *list,int value){
     list->count++;
 }
 
-NodeT *findNode(ListHeader *list,int value){
-    NodeT *q;
-    q = list->first;
-    while (q != NULL){
-        if(q->value == value){
-            return q;
-        }
-        q = q->next;
-    }
-    if (q == NULL)
-        return NULL;
-}
-
-int **initialArray(int value){
-    int **array = (int**)malloc(value*sizeof(int*));
-    for(int i = 0;i < value;i++){
-        array[i] = (int*)malloc(2*sizeof(int));
-    }
-    return array;
-}
 void switchNodes(ListHeader *list,int a,int b) {
     if (a == b) // daca sunt egale nu trb sa fac nimic
         return;
