@@ -52,7 +52,7 @@ BSTNodeT *findMin(BSTNodeT *node)
 
     if ( node->left )
     {
-        node = findMin(node->left);
+       findMin(node->left);
     }
     return node;
 }
@@ -62,7 +62,7 @@ BSTNodeT *findMax(BSTNodeT *node)
     if (node == NULL)
         return NULL;
     if (node->right)
-        node = findMax(node->right);
+        findMax(node->right);
     return node;
 }
 

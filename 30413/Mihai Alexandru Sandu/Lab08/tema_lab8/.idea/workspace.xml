@@ -12,12 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77d80cfc-8675-49b3-b782-c04082a25800" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Lab07/extra_lab7/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab07/extra_lab7/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab07/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab07/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab07/extra_lab7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab07/extra_lab7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab07/extra_lab7/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab07/extra_lab7/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +56,6 @@
     <property name="settings.editor.selected.configurable" value="inlay.hints" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="tema_lab8" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tema_lab8" TARGET_NAME="tema_lab8" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tema_lab8" RUN_TARGET_NAME="tema_lab8">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -87,6 +77,7 @@
       <updated>1617897629297</updated>
       <workItem from="1617897630921" duration="3889000" />
       <workItem from="1617901742293" duration="6000" />
+      <workItem from="1618333628782" duration="97000" />
     </task>
     <servers />
   </component>
