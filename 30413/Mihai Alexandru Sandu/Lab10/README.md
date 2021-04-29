@@ -1,5 +1,6 @@
-# Lab X
+# Lab 10
 
-> Edit this file and describe in a few words what you've done in this lab.
+> In this lab we learned about dynamic programing and also about heuristics.
+> We did some examples for dynamic programing and we also had to implement a problem
 
 
